@@ -149,4 +149,8 @@ span{
     .button-sortear {
         position: static;
     }
+
+    span {
+        margin-left: 60px;
+    }
 }

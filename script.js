@@ -1,11 +1,10 @@
-function generateNumber(){
+const button = document.getElementById('generate');
 
-// aqqui utilizamos a biblioteca Math
+button.addEventListener('click', function() {
+      const min = Math.ceil(document.querySelector('.input-min').value)
+      const max = Math.floor(document.querySelector('.input-max').value)
 
-   const min = Math.ceil(document.querySelector('.input-min').value) 
-   const max = Math.floor(document.querySelector('.input-max').value)
+      let result = Math.floor(Math.random() * (max - min + 1)) + min;
 
-   const result = Math.floor(Math.random() * (max - min +1)) + min; 
-
-   alert(result)
-}
+      document.querySelector('#result > span').textContent = result;
+});
