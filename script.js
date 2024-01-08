@@ -7,5 +7,5 @@ function generateNumber(){
 
    const result = Math.floor(Math.random() * (max - min +1)) + min; 
 
-   document.querySelector('#result > span').textContent = result;
+   alert(result)
 }
